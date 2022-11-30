@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace StackUsingLinkedList_CSharp
 {
-    internal class Program
-    {
+    
         class node
         {
             public int info;
@@ -51,11 +50,21 @@ namespace StackUsingLinkedList_CSharp
                 node tmp;
                 if (empty()) //If Stack is empty
                     Console.WriteLine("\nStack Empty");
+                else
+                {
+                    //Tranverse the list from beggining till end
+                    for (tmp = top; tmp != null; tmp = tmp.next)
+                    {
+                        Console.WriteLine(tmp.info);
+                    }
+                    Console.WriteLine();
+                }
+
+            }
+            static void Main(string[] args)
+            {
 
             }
         }
-        static void Main(string[] args)
-        {
-        }
-    }
+
 }
