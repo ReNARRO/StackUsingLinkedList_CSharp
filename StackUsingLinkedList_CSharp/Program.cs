@@ -36,6 +36,10 @@ namespace StackUsingLinkedList_CSharp
             {
                 node fresh;
                 fresh = new node(element, null);
+
+                fresh.next = top;
+                top = fresh;
+                Console.WriteLine("\n" + element + "pushed.");
             }
         }
         static void Main(string[] args)
