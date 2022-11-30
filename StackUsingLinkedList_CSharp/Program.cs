@@ -18,6 +18,14 @@ namespace StackUsingLinkedList_CSharp
                 next = n;
             }
         }
+        class Stacks
+        {
+            node top;
+            public Stacks()
+            {
+                top = null;
+            }
+        }
         static void Main(string[] args)
         {
         }
