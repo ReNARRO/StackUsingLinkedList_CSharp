@@ -29,6 +29,8 @@ namespace StackUsingLinkedList_CSharp
             {
                 if (top == null)
                     return true;
+                else 
+                    return false;
             }
         }
         static void Main(string[] args)
