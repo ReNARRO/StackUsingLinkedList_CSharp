@@ -32,6 +32,11 @@ namespace StackUsingLinkedList_CSharp
                 else 
                     return false;
             }
+            public void push(int element)
+            {
+                node fresh;
+                fresh = new node(element, null);
+            }
         }
         static void Main(string[] args)
         {
